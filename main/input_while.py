@@ -24,7 +24,7 @@ while number != exit_num:
     while not 1 <= number <= 100:
         # try and except if we do not get a number
         try:
-            number = int(input('Enter a number 1- 100: '))
+            number = int(input('Not in range. Enter a number 1- 100: '))
         except ValueError:
             # prints invalid so and sets number to zero so won't add to list
             print('Not Valid')
@@ -45,4 +45,42 @@ print('Numbers in list:')
 for num in user_numbers:
     print(num)
 
+"""
+Tests:
+1.)
+Enter a number 1 - 100(999 to exit): 89
+Enter a number 1 - 100(999 to exit): 5
+Enter a number 1 - 100(999 to exit): f
+Not Valid
+Not in range. Enter a number 1- 100: f
+Not Valid
+Not in range. Enter a number 1- 100: 899
+Not in range. Enter a number 1- 100: 8
+Enter a number 1 - 100(999 to exit): 999
+Numbers in list:
+89
+5
+8
 
+2.)
+Enter a number 1 - 100(999 to exit): 56
+Enter a number 1 - 100(999 to exit): 78
+Enter a number 1 - 100(999 to exit): 999
+Numbers in list:
+56
+78
+
+3.)
+Enter a number 1 - 100(999 to exit): hi
+Not Valid
+Not in range. Enter a number 1- 100: 78
+Enter a number 1 - 100(999 to exit): r
+Not Valid
+Not in range. Enter a number 1- 100: 23
+Enter a number 1 - 100(999 to exit): 15
+Enter a number 1 - 100(999 to exit): 999
+Numbers in list:
+78
+23
+15
+"""
