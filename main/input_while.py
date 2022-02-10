@@ -6,6 +6,8 @@ Last date modified: 02/10/2022
 
 The purpose of this program is to that prompts the user for numeric input between 1 and 100. Prompt the user until
 the input is in the correct range. Once the input is correct, store the input in a list.
+Uses input validation so that we get correct (in range) numbers. Prints out the list when the
+user decides to exit.
 """
 # declaring list variable and sentinel value
 user_numbers = []
